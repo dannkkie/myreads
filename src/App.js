@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link,  Route } from 'react-router-dom';
 
 import './App.css';
 import './loader.css';
