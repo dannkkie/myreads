@@ -19,10 +19,10 @@ class BookShelfController extends Component {
             <div className={this.state.isUpdating ? 'book-shelf-changer loading' : 'book-shelf-changer'}>
                 <select value={this.props.book.shelf} onChange={event => this.changeShelf(event)}>
                     <option value='move' disabled>Move to...</option>
-                    <option value='currentlyReading' disabled>Currently Reading</option>
-                    <option value='wantToRead' disabled>Want to Read</option>
-                    <option value='read' disabled>Read</option>
-                    <option value='none' disabled>None</option>
+                    <option value='currentlyReading' >Currently Reading</option>
+                    <option value='wantToRead' >Want to Read</option>
+                    <option value='read' >Read</option>
+                    <option value='none' >None</option>
                 </select>
                 {this.state.isUpdating && <div className='loader-two'></div>}
             </div>
