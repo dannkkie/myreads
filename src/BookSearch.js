@@ -49,7 +49,7 @@ class BookSearch extends Component {
 
         this.setState({
             findBook: books,
-            issearching: false
+            isSearching: false
         })
     }
 
@@ -89,8 +89,8 @@ class BookSearch extends Component {
                 )}
 
                 {this.state.isSearching ? (
-                    <div className='loader'></div>
-                ) : (
+                    <div className='loader'></div>) : 
+                    (
                     <div className='search-books-results'>
                         <ol className='books-grid'>
                             {findBook.map(book => (
