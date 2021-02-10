@@ -4,8 +4,7 @@ import BookShelfController from './BookShelfController';
 function Book(props) {
     const { book, onChangeShelf } = props;
 
-    const image = book.imageLinks === undefined
-                    ? `https://dummyimage.com/128x128/000/fff.png&text=No+Image` : book.imageLinks.thumbnail;
+    const image = book?.imageLinks?.thumbnail ?? `https://dummyimage.com/128x128/000/fff.png&text=No+Image`;
 
     const authors = book.authors === undefined ? 'Author is unknown' : book.authors.join(', ');
 
