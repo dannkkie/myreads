@@ -3,7 +3,7 @@
 ## Installation
 
 * `fork this repository`
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/dannkkie/myreads.git` 
 * `cd myreads`
 * `npm install`
 * `npm run start`
