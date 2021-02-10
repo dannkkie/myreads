@@ -5,7 +5,7 @@ import Book from './Book';
 function BookShelf(props) {
     return (
         <div className='bookshelf'>
-            <h2 bookshelf-title>{props.shelfName}</h2>
+            <h2 className='bookshelf-title'>{props.shelfName}</h2>
             <div className='bookshelf-books'>
                 {!props.appLoaded ? (<div className='loader'></div>) 
                 : props.fBooks.length <= 0 ? (<h3 className='bookshelf-status'>Shelf is Empty</h3>)
