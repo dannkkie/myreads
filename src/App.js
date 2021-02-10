@@ -20,12 +20,11 @@ class BooksApp extends Component {
     isLoaded: false
   }
 
-  componentDidMount() {
-    BooksAPI.getAll().then(results => {
+  async componentDidMount() {
+    const books = await BooksAPI.getAll()
       this.setState({
-        books: results,
+        books,
         isLoaded: true
-      })
     })
   }
 
