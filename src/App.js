@@ -81,7 +81,9 @@ class BooksApp extends Component {
             </div>
           )}/>
 
-          <Route path="/search" render={() => <BookSearch shelvedBooks={books} onChangeShelf={this.changeShelf} />} />  
+          <Route path="/search">
+          <BookSearch shelvedBooks={books} onChangeShelf={this.changeShelf} />
+          </Route>  
       </div>
     )
   }
